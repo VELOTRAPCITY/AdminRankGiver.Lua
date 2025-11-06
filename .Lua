@@ -82,13 +82,6 @@ local function showError()
     errorFrame:Destroy()
 end
 
-if game.PlaceId ~= 8004306163 then
-    showError()
-    task.wait(5)
-    player:Kick("Wrong game! Only works in Gear Troll Tower (ID: 8004306163)")
-    return
-end
-
 local ShopPurchase = rs:WaitForChild("ShopPurchase")
 
 local screen = Instance.new("ScreenGui")
